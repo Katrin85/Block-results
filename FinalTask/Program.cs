@@ -13,6 +13,8 @@ string[] InputArray(int n)
     }
     return inputArray;
 }
+
+
 string[] SortArray(string[] inputArray)
 {
     string[] sortArray = new string[inputArray.Length];
@@ -27,8 +29,24 @@ string[] SortArray(string[] inputArray)
     }
     return sortArray;
 }
+
+
 void OutputArray(string[] outputArray)
 {
     for (int i = 0; i < outputArray.Length; i++)
         Console.Write(outputArray[i] + "    ");
 }
+
+
+//----------------- О С Н О В Н А Я     П Р О Г Р А М М А -------------------------------
+Console.WriteLine("Это программа, которая из введённого массива строк формирует новый массив из строк, ");
+Console.WriteLine("длина которых меньше, либо равна 3 символам. Можно вводить абсолютную абракадабру!))");
+Console.Write("Введите размерность массива:");
+int n = Convert.ToInt32(Console.ReadLine());  // переменная размерности массива
+string[] array = InputArray(n);
+Console.WriteLine("Вы заполнили такой вот массив: ");
+OutputArray(array);
+Console.WriteLine();
+string[] array2 = SortArray(array);
+Console.WriteLine("После сортировки получился такой массив: ");
+OutputArray(array2);
