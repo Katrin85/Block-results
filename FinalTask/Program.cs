@@ -27,3 +27,8 @@ string[] SortArray(string[] inputArray)
     }
     return sortArray;
 }
+void OutputArray(string[] outputArray)
+{
+    for (int i = 0; i < outputArray.Length; i++)
+        Console.Write(outputArray[i] + "    ");
+}
