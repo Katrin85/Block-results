@@ -13,3 +13,17 @@ string[] InputArray(int n)
     }
     return inputArray;
 }
+string[] SortArray(string[] inputArray)
+{
+    string[] sortArray = new string[inputArray.Length];
+    int j = 0;
+    for (int i = 0; i < inputArray.Length; i++)
+    {
+        if (inputArray[i].Length <= 3)
+        {
+            sortArray[j] = inputArray[i];
+            j++;
+        }
+    }
+    return sortArray;
+}
